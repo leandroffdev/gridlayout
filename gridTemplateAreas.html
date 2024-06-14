@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* GRID */
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                    "header header header header"
+                    "main main . sidebar"
+                    "footer footer footer footer";
+            gap: 5px;
+        }
+        .grid-container-2 {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 
+                    "header header header header"
+                    "main main . sidebar"
+                    "footer footer footer footer";
+            gap: 5px;
+        }
+        .grid-container-3 {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: 100px 200px 50px;
+            grid-template-areas: 
+                    "header header header header"
+                    "main main main sidebar"
+                    "footer footer footer footer";
+            gap: 5px;
+        }
+        /* GRID-ITEMS */
+        .item {
+            background-color: blueviolet;
+            color: #fff;
+            border:  1px solid #000;
+            text-align: center;
+        }
+        .header {
+            grid-area: header;
+        }
+        .main {
+            grid-area: main;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <h4>grid-template-areas</h4>
+    <div class="grid-container">
+        <div class="item header">HEADER</div>
+        <div class="item main">MAIN</div>
+        <div class="item sidebar">SIDEBAR</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+    <br>
+    <h4>grid-template-areas 2</h4>
+    <div class="grid-container-2">
+        <div class="item header">HEADER</div>
+        <div class="item main">MAIN</div>
+        <div class="item sidebar">SIDEBAR</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+    <br>
+    <h4>grid-template-areas 3</h4>
+    <div class="grid-container-3">
+        <div class="item header">HEADER</div>
+        <div class="item main">MAIN</div>
+        <div class="item sidebar">SIDEBAR</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+</body>
+</html>
