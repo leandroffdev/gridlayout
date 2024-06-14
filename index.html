@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso de CSS GRID Layout">
+    <link rel="stylesheet" href="./style.css">
+    <title>CSS Grid Layout</title>
+</head>
+<body>
+    <div class="container">
+        <h4>Grid-template-columns: repeat(2, minmax(6rem, 1fr))</h4>
+        <div class="grid">
+            <div class="grid-item item-1">grid-item 1</div>
+            <div class="grid-item item-2">grid-item 2</div>
+            <div class="grid-item item-3">grid-item 3</div>
+            <div class="grid-item item-4">grid-item 4</div>
+            <div class="grid-item item-5">grid-item 5</div>
+            <div class="grid-item item-6">grid-item 6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Grid-template-areas: repeat(3, 1fr)</h4>
+        <div class="grid-2">
+            <div class="grid-item item-1">grid-item 1</div>
+            <div class="grid-item item-2">grid-item 2</div>
+            <div class="grid-item item-3">grid-item 3</div>
+            <div class="grid-item item-4">grid-item 4</div>
+            <div class="grid-item item-5">grid-item 5</div>
+            <div class="grid-item item-6">grid-item 6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));</h4>
+        <div class="grid-3">
+            <div class="grid-item item-1">grid-item 1</div>
+            <div class="grid-item item-2">grid-item 2</div>
+            <div class="grid-item item-3">grid-item 3</div>
+            <div class="grid-item item-4">grid-item 4</div>
+            <div class="grid-item item-5">grid-item 5</div>
+            <div class="grid-item item-6">grid-item 6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));</h4>
+        <div class="grid-4">
+            <div class="grid-item item-1">grid-item 1</div>
+            <div class="grid-item item-2">grid-item 2</div>
+            <div class="grid-item item-3">grid-item 3</div>
+            <div class="grid-item item-4">grid-item 4</div>
+            <div class="grid-item item-5">grid-item 5</div>
+            <div class="grid-item item-6">grid-item 6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>grid-template-columns: minmax(100px, 1fr) auto;</h4>
+        <div class="grid-5">
+            <div class="grid-item item-1">grid-item 1</div>
+            <div class="grid-item item-2">grid-item 2</div>
+            <div class="grid-item item-3">grid-item 3</div>
+            <div class="grid-item item-4">grid-item 4</div>
+            <div class="grid-item item-5">grid-item 5</div>
+            <div class="grid-item item-6">grid-item 6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>grid-template-columns: minmax(100px, 1fr) auto;</h4>
+        <h4>grid-template-rows: auto 200px 100px;</h4>
+        <div class="grid-6">
+            <div class="grid-item item-1">grid-item 1</div>
+            <div class="grid-item item-2">grid-item 2</div>
+            <div class="grid-item item-3">grid-item 3</div>
+            <div class="grid-item item-4">grid-item 4</div>
+            <div class="grid-item item-5">grid-item 5</div>
+            <div class="grid-item item-6">grid-item 6</div>
+        </div>
+    </div>
+</body>
+</html>
