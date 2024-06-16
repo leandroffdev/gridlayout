@@ -1,0 +1,40 @@
+@import './reset';
+@import './posicionamento';
+@import './item';
+
+body {
+    @include reset();
+    @include dimensoes(100vw, 100vh);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    .container {
+        .grid1 {
+            display: grid;
+            grid-template: 50px 1fr / 100px 1fr 100px;  // Linhas / Colunas
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template: 
+                        "logo nav nav" 50px
+                        "sidenav content advert" 150px
+                        "sidenav footer footer" 100px
+                        / 100px 1fr 100px;  // Linhas / Colunas
+        }
+
+        .logo {grid-area: logo;}
+        .nav {grid-area: nav;}
+        .sidenav {grid-area: sidenav;}
+        .content {grid-area: content;}
+        .advert {grid-area: advert;}
+        .footer {grid-area: footer;}
+
+        .item {
+            @include item(auto, auto, rgb(241, 14, 128), white);
+        }
+    }
+
+    
+}

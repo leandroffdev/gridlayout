@@ -1,0 +1,8 @@
+@mixin item($w, $h, $c, $c2) {
+    @include dimensoes($w, $h);
+    line-height: $h;
+    text-align: center;
+    background-color: $c;
+    color: $c2;
+    border: 1px solid $c2;
+}

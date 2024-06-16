@@ -1,0 +1,50 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .container .grid1 {
+  display: grid;
+  grid-template: 50px 1fr/100px 1fr 100px;
+}
+body .container .grid2 {
+  display: grid;
+  grid-template: "logo nav nav" 50px "sidenav content advert" 150px "sidenav footer footer" 100px/100px 1fr 100px;
+}
+body .container .logo {
+  grid-area: logo;
+}
+body .container .nav {
+  grid-area: nav;
+}
+body .container .sidenav {
+  grid-area: sidenav;
+}
+body .container .content {
+  grid-area: content;
+}
+body .container .advert {
+  grid-area: advert;
+}
+body .container .footer {
+  grid-area: footer;
+}
+body .container .item {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  line-height: auto;
+  text-align: center;
+  background-color: rgb(241, 14, 128);
+  color: white;
+  border: 1px solid white;
+}/*# sourceMappingURL=style.css.map */

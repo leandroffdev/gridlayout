@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>grid-template: x x / y y y;</h3>
+        <p>grid-template: 50px 1fr / 100px 1fr 100px</p>
+        <div class="grid1">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>grid-template: areas, columns, rows;</h3>
+        <p>grid-template: <br>"logo nav nav" 50px<br>
+            "sidenav content advert" 150px<br>
+            "sidenav footer footer" 100px<br>
+            / 100px 1fr 100px;</p>
+        <div class="grid2">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item content">content</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </div>
+    </div>
+</body>
+</html>
