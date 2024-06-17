@@ -1,8 +1,9 @@
 body {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
-  overflow: hidden;
   display: grid;
+  place-items: center;
+  margin: auto;
   grid-template-columns: 1fr;
   gap: 20px;
 }
@@ -11,6 +12,9 @@ body * {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+body .container {
+  width: 100%;
 }
 body .container .grid1 {
   display: grid;
@@ -41,10 +45,63 @@ body .container .footer {
 body .container .item {
   width: auto;
   height: auto;
-  overflow: hidden;
   line-height: auto;
   text-align: center;
   background-color: rgb(241, 14, 128);
   color: white;
   border: 1px solid white;
+  line-height: 50px;
+}
+body .container .gap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+body .container .grid-column-gap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body .container .grid-row-gap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+}
+body .container .grid-area {
+  display: grid;
+}
+body .container .grid-area .item1 {
+  grid-area: 1/2/4/3;
+  background-color: rgb(53, 194, 10);
+}
+body .container .grid-area .item4 {
+  background-color: blueviolet;
+  grid-area: 4/2/8/3;
+}
+body .container .grid-area2 {
+  display: grid;
+  grid-template-areas: "h h h" "s c c" "s c c" "f f f";
+}
+body .container .grid-area2 .item {
+  background-color: rgb(241, 14, 128);
+  color: white;
+}
+body .container .grid-area2 .item-1 {
+  grid-area: h;
+  background-color: greenyellow;
+}
+body .container .grid-area2 .item-2 {
+  grid-area: s;
+  background-color: rgb(4, 172, 79);
+}
+body .container .grid-area2 .item-3 {
+  grid-area: f;
+  background-color: rgb(230, 58, 15);
+}
+body .container .grid-area2 .item-4 {
+  justify-self: end;
+}
+body .container .grid-area2 .item-5 {
+  align-self: start;
 }/*# sourceMappingURL=style.css.map */
